@@ -21,7 +21,7 @@ repository = ""
 dev = [
   "isort ~=5.10",
   "black ~=23.1",
-  "ruff ~=0.0.275",
+  "ruff ~=0.1.0",
   "nonemoji ~=0.1",
   "pre-commit ~=3.1"
 ]
