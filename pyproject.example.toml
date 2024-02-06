@@ -20,8 +20,8 @@ repository = ""
 [tool.pdm.dev-dependencies]
 dev = [
   "isort ~=5.10",
-  "black ~=23.1",
-  "ruff ~=0.1.0",
+  "black ~=24.0",
+  "ruff ~=0.2.0",
   "nonemoji ~=0.1",
   "pre-commit ~=3.1"
 ]
