@@ -21,14 +21,14 @@ repository = ""
 dev = [
   "isort ~=5.10",
   "black ~=24.0",
-  "ruff ~=0.2.0",
+  "ruff ~=0.3.0",
   "nonemoji ~=0.1",
   "pre-commit ~=3.1"
 ]
 
 [tool.black]
 line-length = 88
-target-version = ["py38", "py39", "py310", "py311"]
+target-version = ["py38", "py39", "py310", "py311", "py312"]
 include = '\.pyi?$'
 extend-exclude = '''
 '''
@@ -54,5 +54,5 @@ fixture-parentheses = false
 mark-parentheses = false
 
 [build-system]
-requires = ["pdm-pep517>=1.0.0"]
-build-backend = "pdm.pep517.api"
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
