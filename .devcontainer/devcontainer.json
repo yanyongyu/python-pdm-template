@@ -1,15 +1,15 @@
 {
-  "name": "Default Linux Universal",
-  "image": "mcr.microsoft.com/devcontainers/universal:2-linux",
+  "name": "Ubuntu",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {
-    "ghcr.io/devcontainers-contrib/features/pdm:2": {}
+    "ghcr.io/devcontainers-extra/features/pdm:2": {},
+    "ghcr.io/meaningful-ooo/devcontainer-features/fish:2": {}
   },
   "postCreateCommand": "pdm config venv.in_project true && pdm sync -G:all && pdm run pre-commit install",
   "customizations": {
     "vscode": {
       "settings": {
         "python.analysis.diagnosticMode": "workspace",
-        "ruff.organizeImports": false,
         "[python]": {
           "editor.defaultFormatter": "charliermarsh.ruff",
           "editor.codeActionsOnSave": {
@@ -46,7 +46,6 @@
       "extensions": [
         "ms-python.python",
         "ms-python.vscode-pylance",
-        "ms-python.isort",
         "charliermarsh.ruff",
         "EditorConfig.EditorConfig",
         "esbenp.prettier-vscode"
